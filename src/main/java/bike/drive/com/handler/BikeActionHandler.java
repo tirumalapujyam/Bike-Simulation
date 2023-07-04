@@ -43,8 +43,8 @@ public class BikeActionHandler {
     public void moveForward(){
         try {
             bike = bikeStatus();
-            int newX = 0;
-            int newY = 0;
+            int newX;
+            int newY;
             switch (bike.getFacing()) {
                 case EAST:
                     newX = bike.getX() + 1;
